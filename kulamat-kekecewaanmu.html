@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kulamat Kekecewaanmu</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:#08090a;color:#d8d0c5;font-family:Georgia,serif;overflow-x:hidden}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:35px 22px;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 45%,rgba(130,105,75,.18),transparent 28%),linear-gradient(#08090a,#11100f,#050506)}
+.hero:after{content:"";position:absolute;width:500px;height:500px;border:1px solid rgba(200,180,150,.08);border-radius:50%;box-shadow:0 0 0 60px rgba(200,180,150,.02)}
+.intro{position:relative;z-index:3;max-width:720px}
+.eyebrow{font-size:11px;letter-spacing:6px;text-transform:uppercase;color:#777068;margin-bottom:25px}
+h1{font-size:clamp(48px,10vw,90px);line-height:.95;font-weight:normal;font-style:italic;margin:0;color:#e4dace}
+.subtitle{max-width:570px;margin:35px auto 0;color:#8d857c;font-size:17px;line-height:1.9}
+.open{margin-top:35px;padding:15px 34px;border:1px solid #6b6258;background:#0b0b0c;color:#c9bcae;font:16px Georgia;cursor:pointer;transition:.4s}
+.open:hover{background:#d5c7b6;color:#111}
+.moon{position:absolute;right:10%;top:12%;width:100px;height:100px;border-radius:50%;background:#d0c5b5;opacity:.1;box-shadow:0 0 60px #cbbda7}
+.window{position:absolute;right:8%;bottom:12%;width:110px;height:145px;border:3px solid #29241f;opacity:.65;background:linear-gradient(90deg,transparent 47%,#29241f 48% 52%,transparent 53%),linear-gradient(0deg,transparent 47%,#29241f 48% 52%,transparent 53%)}
+.tree{position:absolute;left:7%;bottom:0;width:5px;height:210px;background:#161311;transform:rotate(-3deg);opacity:.8}.tree:before,.tree:after{content:"";position:absolute;width:5px;height:130px;background:#161311;bottom:0}.tree:before{transform:rotate(42deg)}.tree:after{transform:rotate(-48deg)}
+.poem-section{min-height:100vh;padding:100px 20px;display:flex;justify-content:center;background:radial-gradient(circle,rgba(100,76,52,.1),transparent 40%),#0b0c0d}
+.paper{width:min(820px,100%);padding:clamp(32px,7vw,72px);background:#d1c5b4;color:#29241f;box-shadow:0 35px 100px #000;position:relative;transform:translateY(70px);opacity:0;transition:1.4s}
+.paper.show{transform:translateY(0);opacity:1}.paper:before{content:"";position:absolute;inset:12px;border:1px solid rgba(55,45,35,.3)}
+.title{text-align:center;font-size:32px;font-weight:normal;font-style:italic;margin:0 0 45px}.poem{white-space:pre-line;font-size:18px;line-height:2.05}.signature{text-align:right;margin-top:45px;color:#65594c;font-style:italic}
+.end{text-align:center;padding:100px 20px;color:#777068;line-height:2;font-style:italic}.back{display:block;margin:25px auto;padding:10px 22px;border:1px solid #49433d;border-radius:30px;background:transparent;color:#827a71;cursor:pointer}
+.p{position:fixed;top:-20px;width:2px;height:2px;background:#aaa;opacity:.3;animation:fall linear infinite;z-index:1}@keyframes fall{to{transform:translateY(110vh) rotate(360deg)}}
+@media(max-width:650px){.moon{right:-25px}.window{right:-20px;opacity:.3}.tree{left:1%;opacity:.5}.poem{font-size:16px;line-height:1.95}}
+</style>
+</head>
+<body>
+<section class="hero">
+<div class="moon"></div><div class="tree"></div><div class="window"></div>
+<div class="intro">
+<div class="eyebrow">sebuah catatan yang tidak selesai</div>
+<h1>Kulamat<br>Kekecewaanmu.</h1>
+<p class="subtitle">Bukan seperti membaca surat kabar atau ramalan cuaca, melainkan seperti berdiri di tepi laut dan mendengar batu-batu kecil berbisik tentang hal-hal yang tak pernah sempat diucapkan.</p>
+<button class="open" onclick="openPoem()">baca perlahan</button>
+</div></section>
+
+<section class="poem-section" id="puisi"><article class="paper" id="paper">
+<h2 class="title">Kulamat Kekecewaanmu.</h2>
+<div class="poem">Bukan seperti orang membaca surat kabar atau ramalan cuaca, melainkan seperti seseorang yang berdiri di tepi laut dan mendengar batu-batu kecil berbisik tentang hal-hal yang tak pernah sempat diucapkan.
+
+Kekecewaanmu ternyata tidak berwarna hitam. Ia menyerupai taman yang lupa musim, tempat bunga-bunga mekar tanpa nama lalu gugur sebelum sempat dikenang. Di sana, jam-jam berjalan mundur sambil memanggul sisa percakapan yang telah menjadi debu.
+
+Aku melihat burung-burung membawa serpihan harapan ke langit yang retak. Mereka terbang rendah, seolah takut bahwa cita-cita yang terlalu tinggi akan berubah menjadi hujan yang tak kembali ke bumi.
+
+Dan di sudut paling sunyi dari matamu, ada sebuah kota kecil yang telah lama ditinggalkan penghuninya. Pintu-pintu masih terbuka, lampu-lampu masih menyala, tetapi tak ada seorang pun pulang. Hanya angin yang mondar-mandir, menghafal nama-nama yang perlahan dilupakan.
+
+Barangkali, kekecewaan memang bukan luka.
+
+Ia adalah rumah tua yang terus berdiri,
+meski penghuninya telah belajar hidup
+di tempat lain.</div>
+<div class="signature">— untuk segala sesuatu yang pernah tinggal.</div>
+</article></section>
+
+<div class="end">mungkin beberapa perasaan<br>tidak benar-benar ingin disembuhkan.<br><br>ia hanya ingin dikenang<br>sebagai tempat yang pernah disebut rumah.<br><br>◇
+<button class="back" onclick="window.scrollTo({top:0,behavior:'smooth'})">kembali ke awal</button></div>
+
+<script>
+for(let i=0;i<70;i++){let x=document.createElement("span");x.className="p";x.style.left=Math.random()*100+"vw";x.style.animationDuration=(4+Math.random()*8)+"s";x.style.animationDelay=Math.random()*6+"s";document.body.appendChild(x)}
+function openPoem(){document.getElementById("paper").classList.add("show");document.getElementById("puisi").scrollIntoView({behavior:"smooth"})}
+</script>
+</body>
+</html>
